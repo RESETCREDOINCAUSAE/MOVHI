@@ -23,6 +23,52 @@
    
 <link rel="stylesheet" href="index.css">
     <style>
+      div.jumbotron{
+        background-color: black !important;
+      }
+      button{
+        background-color: orangered !important;
+        background-image: none;
+        border-radius: 15px;
+      }
+.piedepagina{
+        height: 10% !important;
+        position: relative !important;
+              bottom: 10px !important;
+      }
+       
+      body{
+    text-align: center;
+    color: white;
+margin: 2%;
+margin-top: 3%;
+background: black;
+height: 1300px !important;
+max-height: 1400px !important;
+        }
+        @media (max-width: 600px) {
+  body{
+    text-align: center;
+    color: white;
+margin: 2%;
+margin-top: 3%;
+background: black;
+  height: 1300px !important;
+  max-height: 1400px !important;
+  }
+  }
+        .texto{
+  position: relative;
+  top: 50%;
+  color: orangered !important;
+}
+h4{
+  background-color:transparent !important;
+  width: 100% !important;
+}
+.t{
+color: white;
+}
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         </style>
 </head>
@@ -35,45 +81,40 @@
         </div>
        </nav>
        <div class="resetear">
-       
-        <span class="parpadea text"><strong>SUSCRÍBETE</strong> </span> 
+       <br>
+  <br>
+
+        <button><span class="parpadea text"><strong><a href="formulario.html" >SUSCRÍBETE</a></strong> </span> </button>
+        <br>
         <center> <img src="IMG03.png" width="66%" id="img05"> </center>
        </div> 
-          <center> <a href="formulario.html" class="btn btn-danger" role="button">FORMULARIO</a> </center>
+ 
            
    <div class="container">
-           <h4>        <span class="glyphicon glyphicon-road"></span> 	¿Còmo funciona?  </h4>
+           <h4>        <span class="glyphicon glyphicon-road"></span> 	<y class="funciona"> <button><span class="parpadea text"><strong>¿COMO FUNCIONA?</strong> </span> </button></y> </h4>
           
            
            <br>
            <p> Los anuncios y su material son seguros para la pintura del auto, además de protegerla es de fácil instalación y retiro, todo hecho de la mano de profesionales</p>
-           <div class="imagenes">
-            <img src="IMG03.png" alt="imagen3" id="IMGA">
-            <br>
-            <br>
+           
               <br>
               <p>Hacemos un análisis de tus hábitos de ruta  Te informamos cuales campañas están disponibles para tiMarcamos el auto y te pagamos mensualmente
                 Nos encargamos de retirar el anuncio una vez finaliza la campaña </p>
               <br>
-              <br>
-              <img src="IMG03.png" alt="imagen2" id="IMGB">
-              <br>
-              <br>
-              <br>
-              <h3 class="texta">
-                Promovemos ingresos extra para conductores mientras realizan sus actividades cotidianas.
-                Si eres conductor de app no hay problema también puedes participar.            
+          
+                <p>ingresos extra para conductores mientras realizan sus actividades cotidianas.
+                Si eres conductor de app no hay problema también puedes participar.     </p> 
              </h3>
               <br>
-              <img src="IMG03.png" alt="imagen3" id="IMGC">
+             
               </div>
               </div>
-              <h3> SUSCRÍBETE</h3>
-              <center> <a href="formulario.html" class="btn btn-danger" role="button">FORMULARIO</a> </center>
+              <button><span class="parpadea text"><strong><a href="formulario.html">SUSCRÍBETE</a></strong> </span> </button>
+              
            <br>
            <div class="jumbotron jumbotron-fluid">
               <div class="container2">
-                <span class="pregunta"> ???</span>  PREGUNTAS FRECUENTES
+                <t class="t"> PREGUNTAS FRECUENTES <t>
               
               </div>
             </div>
@@ -116,10 +157,10 @@
     });
   }
   </script>
-  <br>
-  <br>
-    
   
     </div>
+    <div class="piedepagina">
+      <b class="texto">MOVHI 2022 © TODOS LOS DERECHOS RESERVADOS </b> 
+ </div>
 </body>
 </html>
