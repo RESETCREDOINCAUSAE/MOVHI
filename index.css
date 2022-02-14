@@ -95,7 +95,7 @@ width: 100%;
         }
         }
         @media (max-width: 600px) {
-            #img05{
+            #img05, .img05{
             width: 100%;
             }
             }

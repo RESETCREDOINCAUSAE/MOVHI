@@ -17,6 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>MOVHI</title>
@@ -24,8 +25,8 @@
 <link rel="stylesheet" href="index.css">
     <style>
       .Cuadro{
-        height: 700px !important;
-        max-height: 800px !important;
+        height: 820px !important;
+        max-height: 820px !important;
       }
       .piedepagina{
         height: 120px !important;
@@ -33,19 +34,28 @@
       body{
         margin:0%;
       }
-      .whatsapp{
-position: relative !important;
-left: 43%;
-width: 8% !important;
-top: 6% !important;
-}
+ 
 @media (max-width: 600px) {
 .whatsapp{
 width: 25% !important;
 position: relative !important;
 left: 33%;
-top: -20px !important;
+top: 40px !important;
 }
+}
+.nature{
+  position: absolute;
+  left: 30%;
+}
+@media (max-width: 600px) {
+#loco, #loca, #locos {
+width: 70% !important;
+position: relative;
+left: 10%;
+}
+}
+.us{
+  color: orangered !important ;
 }
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         </style>
@@ -81,16 +91,26 @@ top: -20px !important;
          *completo *parcial:  solo puertas* parcial plus: Puertas extendida a guardabarros</ul>
        
     </div>
+  
+
   </div>
+  <img class="nature" src="IMG03.png" width="33%" id="loco">
+  <img class="nature" src="IMG07.PNG" width="33%" id="loca">
+  <img class="nature" src="IMG06.PNG" width="33%"id="locos">
+  
+  <script>
+  w3.slideshow(".nature", 1500);
+  </script>
   <br>
   <br>
   <br>
-<a href="https://api.whatsapp.com/send?phone=+57 3138117414"><img src="wa.png" class="whatsapp"> </a>
-        
+
     </div>
        </div>
        <div class="piedepagina">
-        MOVHI 2022 © Todos los derechos reservados
+        <us class="us">MOVHI 2022 © Todos los derechos reservados </us>
+        <span> <img src="wa.png" width="4%"></span>
+        
   </div>
        </body>
        </html>
