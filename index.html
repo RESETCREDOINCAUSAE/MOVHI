@@ -7,7 +7,7 @@
     <meta name="robots" content="index"/>
     <meta http-equiv="expires" content="0"/>
     <meta http-equiv="expires" content="43200"/>
-  
+    <meta http-equiv="cache-control" content="no-cache"/>
     <meta name="author" content="William Rativa" />
     <meta name="copyright" content="Astro-Logic" />
     <meta name="copyright" content="MOVHI" />
@@ -27,178 +27,270 @@
        *{
         font-family: Italic Bold !important;
        }
-        body{
-    text-align: center;
-    color: white;
-margin: 2%;
-margin-top: 3%;
-background-color: salmon;
-height: 100%;
-max-height: 100%;
-        }
-        .container-fluid{
-          width: 100%;
-          background-color: black;
-          height: 100px;
-          max-width: 100% !important;
-        
-        }
-       #whatsapp{
-        position: absolute;
-        width: 8% !important;
-        top:14%!important;
-        right: 5% !important;
-        height: 200px !important;
-        width: auto !important;
-      }
-button{
-background-color: brown !important;
-background-image: none !important;
-padding: 10% !important;
-max-height: 400px;
-border-radius: 10% !important;
-font-size: 40px !important ;
-}
-
-a :hover{
- color: rgb(237, 237, 243);
- font-family: 'Abril Fatface', cursive;
-}
-a{
-  color: rgb(216, 53, 12);
- font-family: 'Abril Fatface', cursive;
-}
-
-.empresas{
- background-color: brown !important;
-}
-.conductores{
-background-color: brown !important;
-}
-.texto{
-  position: relative;
-  top: 50%;
-  color: #FFFF !important;
-  font-family: Italic Bold !important;
-}
-
-
-.item-a{
-grid-area: imagen11;
-
-}
-.item-b{
-grid-area: imagen22;
-}
-.item-c{
-grid-area: imagen33;
-
-}
-.header{
-grid-area: imagen44;
-background: red;
-
-}
-.footer{
-grid-area: imagen55;
-background: red;
-
-}
-.final{
-  grid-area: final;
-background: red;
-}
-.movhicarrusel{
-  display: grid !important;
-  width: 100% !important;
-  height: 700px !important;
-  grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr  1fr 1fr 1fr 1fr 1fr  1fr;
-    grid-column-gap: 6px;
-    grid-row-gap: 6px;
-    border: 10px !important;
-grid-template-areas: 
-" imagen44 imagen44 imagen44"
-" willi willi willi"
-" imagen11 imagen22 imagen33 "
-    " imagen11 imagen22 imagen33 "
-    " imagen11 imagen22 imagen33 "
-    " imagen55 imagen55 imagen55 "
-    "final final final "
+     body{
+       background-color: black;
+       padding: 2%;
+       width: 100%;
+       height: 2200px !important;
+     }
+   
+     .Cuadro{
+       background-color: salmon;
+       width: 100%;
+       height: 100%;
+       padding: 0;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-areas: 
+    " header header header header header header header header header header header header header header "
+    " header header header header header header header header header header header header header header"
+    " aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso"
+    " boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    " boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    "  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    "  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    " boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos  "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos  "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos   "
+    "footer footer footer footer footer footer footer footer footer footer footer footer footer footer  "
     ;
-    }
-    .willi{
-  grid-area: willi;
-background: red;
+
+     }
+     @media (max-width: 600px) {
+  .Cuadro {
+    background-color: rgb(250, 114, 216);
+       width: 100%;
+       height: 100%;
+       padding: 0;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-areas: 
+    " header header header header header header header header header header header header header header "
+    " header header header header header header header header header header header header header header"
+    " aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso aviso"
+    " boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    " boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    "  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    "  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton"
+    " boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton  boton "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos  "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos "
+    "fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos fotos  "
+    "header header header header header header header header header header header header header header"
+
+    ;
+  }
 }
-   b.class
-#anunciate{
+
+     .item-1{
+    grid-area: header;
+    color: blue;
+    background: rgb(0, 12, 6);
+     }
+     .item-2{
+    grid-area: aviso;
+    color: orange;
+    background: salmon;
+    
+     }
+     .botones{
+       padding: 7% !important;
+      grid-area: boton;
+    color: rgb(51, 255, 0);
+    background: salmon;
+    display: grid;
+    grid-template-columns: 1fr  1fr ;
+    grid-template-rows: 1fr 1fr ;
+    grid-column-gap: 50px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    " boton1 boton2 "
+    "boton1 boton2"
+    ;
+     }
+     @media (max-width: 600px) {
+  .botones {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr  1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    " boton1 boton1 boton1 boton1 boton1 boton1"
+    " boton1 boton1 boton1 boton1 boton1 boton1"
+    " boton1 boton1 boton1 boton1 boton1 boton1"
+    " boton2 boton2 boton2 boton2 boton2 boton2"
+    " boton2 boton2 boton2 boton2 boton2 boton2"
+    " boton2 boton2 boton2 boton2 boton2 boton2"
+    ;
+     }
+}
+     .botonuno{
+grid-area: boton1;
+background-color: orangered;
+border-radius: 12px;
+     }
+ .botondos{
+       background-color: rgb(0, 68, 255);
+       grid-area: boton2;
+       border-radius: 15px;
+
+     }
+ 
+     .galeria{
+grid-area: fotos;
+padding: 10%;
+      color: rgb(126, 29, 206);
+    background: rgb(245, 116, 102);
+    display: grid;
+    grid-template-columns: 1fr  1fr  1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas: 
+    " zeus hermes diana "
+    " zeus hermes diana "
+    " zeus hermes diana "
+    ;
+     }
+     @media (max-width: 600px) {
+  .galeria {
+    grid-area: fotos;
+
+      color: rgb(126, 29, 206);
+    background: rgb(245, 116, 102);
+    display: grid;
+    grid-template-columns: 1fr  1fr  1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;
+    grid-template-areas: 
+    " zeus zeus  zeus "
+    " hermes hermes hermes "
+    " diana diana diana  "
+  
+    ;
+  }
+}
+@media (max-width: 600px) {
+  .hermes, .diana, .zeus {
+    width: 100% !important;
+  }
+}
+
+     .finished{
+      grid-area: footer;
+      color: rgb(49, 151, 100);
+    background: black !important;
+     }
+    
+     .logos{
+       position: relative;
+     left: 10%;
+     
+     }
+     h2{
+       color: rgb(245, 245, 250);
+       width: 100%;
+       height: 170px;
+       background-color: rgb(0, 0, 0);
+       text-align: center;
+     }
+     #xx{
+       position: relative;
+       top: 25%;
+     }
+     center{
+       color: rgb(255, 254, 254);
+     }
+   .fre{
 position: relative;
-top: 70% !important; 
+left: 35%;
+top: 50% ;
+font-size:xx-large;
+color: white;
+   }
+   .fri{
+    position: relative;
+left: 35%;
+top: 50% ;
+font-size:xx-large;
+color: white;
+   }
+   .fre:hover, .fri:hover{
+font-size: 40px !important;
+   }
+   @media (max-width: 600px) {
+  .fre, .fri {
 font-size: 20px;
-border-radius: 20%;
+  }
 }
-img #whatsapp{
-  width: 1px !important;
-}
-.Cuadro{
-    width: 100%;
-    height: 100%;
-    padding: 3%;
-    margin: 0px;
-    color: white;
-    font-size: 30px;
+   .zeus{
+grid-area: zeus;
+
+   }
+   .hermes{
+    grid-area: hermes;
+
+   }
+   .diana{
+    grid-area: diana;
+    
+
+   }
+   .rosa{
+     width: 100%;
+   }
      </style>
 </head>
 <body>
-  <div  class="container-fluid">
-    <br>
-    <br>
-      <bR>
-      <img src="wa.png" class="chatea"width="5%">
-         <div class="Cuadro">
-           <nav class="navbar navbar-inverse navbar-fixed-top">
-         
-            
-        <a class="navbar-brand" href="https://resetcredoincausae.github.io/MOVHI/"><img src="logologo.png" width="11%" id="img01"></a> 
-        </div>
-       </nav>
-       
-        <br>
-       <div id="anunciate">ANÚNCIATE MASIVAMENTE </div>
-    <br><br> <br> <br> <br>
-   <a href="empresas.html"><button type="button" class="empresas"> EMPRESAS</button></a> 
-   <a href="conductores.html"> <button type="button" class="conductores"> CONDUCTORES</button> </a>
-   <br> 
+<div class="Cuadro">
+             <div class="item-1">
+  <img src="LOGOSALMON.png" width="100px" height="200px" class="logos"> 
 
-   <div class="container-fluid">
-      <br>
-      <br> <h5> < GRAN EXPOSICIÓN DE MARCA EN MEDIOS NO CONVENCIONALES </h5>
-    <div class="movhicarrusel">
-      <div class="item-a">
-       
-      </div>
+              </div>
+             <div class="item-2">
 
-      <div class="item-b">
-  
-      </div>
-  
-      <div class="item-c">
-        <img src="IMG05.png" >
-      </div>
+              <h2>  <zz id="xx">MOVHI BANNER </zz> </h2>
+              </div>
 
-      </div>
-    </div>
-  </div>
-
-        
-    </div>
-    
- <div class="piedepagina">
-     MOVHI 2022 © TODOS LOS DERECHOS RESERVADOS 
-    
+             <div class="botones">
+              <div class="botonuno">
+<a href="empresas.html"> <ya class="fre">EMPRESAS <ya> </a>
 </div>
+      <div class="botondos">
+<a href="conductores.html"> <ya class="fri">CONDUCTORES</ya></a>
+     </div>
+   </div>
+            <div class="galeria">
+<div class="zeus">
+  <img src="IMG03.png" height="80%" class="rosa">
 </div>
+
+<div class="hermes">
+  <img src="IMG04.png" height="80%"  class="rosa">
+</div>
+
+ <div class="diana">
+<img src="IMG05.png" height="80%"  class="rosa">
+            </div>
+
+            </div>
+
+            <div class="finished">
+              <center> MOVHI 2022 TODOS LOS DERECHOS RESERVADOS</center>
+            </div>
+</div>  
 </body>
 </html>
-<h1></h1>
