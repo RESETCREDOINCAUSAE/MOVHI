@@ -150,18 +150,19 @@ border-radius: 12px;
  
      .galeria{
 grid-area: fotos;
-padding: 10%;
+padding: 6%;
       color: rgb(126, 29, 206);
     background: rgb(245, 116, 102);
     display: grid;
-    grid-template-columns: 1fr  1fr  1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr  1fr  1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr  1fr;
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     grid-template-areas: 
-    " zeus hermes diana "
-    " zeus hermes diana "
-    " zeus hermes diana "
+    " aviso aviso aviso  aviso aviso aviso"
+    " zeus zeus hermes hermes diana diana "
+    " zeus zeus hermes hermes diana diana "
+    " zeus zeus hermes hermes diana  diana"
     ;
      }
      @media (max-width: 600px) {
@@ -171,14 +172,15 @@ padding: 10%;
       color: rgb(126, 29, 206);
     background: rgb(245, 116, 102);
     display: grid;
-    grid-template-columns: 1fr  1fr  1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr  1fr  1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
     grid-column-gap: 3px;
     grid-row-gap: 3px;
     grid-template-areas: 
-    " zeus zeus  zeus "
-    " hermes hermes hermes "
-    " diana diana diana  "
+    " aviso aviso aviso  aviso"
+    " zeus zeus  zeus  zeus"
+    " hermes hermes hermes  hermes"
+    " diana diana diana  diana "
   
     ;
   }
@@ -246,12 +248,31 @@ grid-area: zeus;
    }
    .diana{
     grid-area: diana;
-    
+   }
 
+   .avisar{
+    grid-area: aviso;
+    background-color: black !important;
+    text-align: center;
+    color: aliceblue;
+
+    width: 100%;
    }
    .rosa{
      width: 100%;
    }
+   .rativa{
+     color: white;
+     position: relative;
+     top: 25%;
+     font-size: 200%;
+
+   }
+   @media (max-width: 600px) {
+  .rativa {
+    font-size: 100%;
+  }
+}
      </style>
 </head>
 <body>
@@ -262,7 +283,7 @@ grid-area: zeus;
               </div>
              <div class="item-2">
 
-              <h2>  <zz id="xx">MOVHI BANNER </zz> </h2>
+              <h2>  <zz id="xx">ANÚNCIATE MASIVAMENTE </zz> </h2>
               </div>
 
              <div class="botones">
@@ -274,6 +295,10 @@ grid-area: zeus;
      </div>
    </div>
             <div class="galeria">
+
+              <div class="avisar">
+               <rativa class="rativa"> MODELOS DE AUTOS </rativa>
+              </div> 
 <div class="zeus">
   <img src="IMG03.png" height="80%" class="rosa">
 </div>
