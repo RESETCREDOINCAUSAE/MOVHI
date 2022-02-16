@@ -6,6 +6,7 @@ margin-top: 3%;
 background: rgb(226, 96, 20) !important;
 height: 700px;
 max-height: 700px;
+background-color: black !important;
  
 }
 @media (max-width: 600px) {
@@ -18,7 +19,7 @@ p{
     font-size: 22px;
 }
 .container2{
-    font-family: Abril Fatface;
+    font-family: Italic Bold;
     font-size: 30px;
     color: orangered;
 }
@@ -34,8 +35,15 @@ h4{
     height: 100%;
     background-image: linear-gradient(salmon,rgb(185, 113, 65),salmon,salmon,salmon,salmon,rgb(185,113,65)
     ,salmon,salmon);
-    padding: 2%;
+    padding: 3%;
     margin: 0px;
+    color: white;
+    font-size:  30px;
+}
+button .conductores{
+  width:  300px !important;
+  color: white !important;
+
 }
 
 h3{
@@ -191,19 +199,13 @@ color: aliceblue;
 background-color: blue;
 }
 .whatsapp{
-position: relative;
-left: 43%;
-width: 8%;
-top: 6% !important;
+position: absolute; 
+width: 8% !important;
+top : 16% !important;
+right: 10%;
 }
-@media (max-width: 600px) {
-.whatsapp{
-width: 25%;
-position: relative;
-left: 39%;
-bottom: -16%;
-}
-}
+
+@
 .jumbotron{
 background-color: blue;
 color: white;
@@ -233,6 +235,8 @@ ul{
 }
 button{
     background-image: linear-gradient(blue,salmon);
+    color: white !important;
+    box-shadow: 0px 12px 12px black;
 }
 .acordion >p{
     background-color: aquamarine;
@@ -257,36 +261,8 @@ font-size: 30px;}
     font-family: Acme;
     text-transform:uppercase;
   }
-  .parpadea {
-    
-    animation-name: parpadeo;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
   
-    -webkit-animation-name:parpadeo;
-    -webkit-animation-duration: 1s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
   
-  @-moz-keyframes parpadeo{  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
-  
-  @-webkit-keyframes parpadeo {  
-    0% { opacity: 1.0; }
-    50% { opacity: 0.0; }
-     100% { opacity: 1.0; }
-  }
-  
-  @keyframes parpadeo {  
-    0% { opacity: 1.0; }
-     50% { opacity: 0.0; }
-    100% { opacity: 1.0; }
-  }
   .text2 {
     font-size:35px;
     font-family:helvetica;
