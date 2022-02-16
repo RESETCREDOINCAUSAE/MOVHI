@@ -21,24 +21,31 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>MOVHI</title>
-   
+    <script>
+      w3.slideshow(".nature", 1500);
+      </script>
 <link rel="stylesheet" href="index.css">
     <style>
       .Cuadro{
         height: 1200px !important;
         max-height: 1200px !important;
+        text-justify: left !important;
       }
       .piedepagina{
-        height: 120px !important;
+        position:fixed;
+        height: 10px !important;
+        bottom: 0px !important;
       }
       body{
         margin:0%;
+        text-justify: justify;
+        background-color:black !important;
       }
  
       .whatsapp{
 position: absolute; 
 width: 8% !important;
-top : 16% !important;
+top : 6% !important;
 right: 10%;
 }
 .nature{
@@ -58,10 +65,27 @@ left: 10%;
 #gato{
   font-size: 150%;
 }
+.container{
+  justify-content: justify !important;
+}
+
+.animacion{
+  display:justify !important;
+}
+body{
+  max-height: 2000px !important;
+  height: 1500px !important;
+}
+#fin{
+  background-color: red !important ;
+}
+
+
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
         </style>
 </head>
 <body>
+  <span> <img src="wa.png" width="6%"></span>
   <br>
   <br>
     <div class="Cuadro">
@@ -71,48 +95,34 @@ left: 10%;
         </div>
        </nav>
        
-
-
-<br>
-<br>
-<div class="jumbotron jumbotron-fluid">
     <div class="container">
-       <br>
-           <div class="animacion"> 
-            <a href="formulario.html" class="btn btn-danger" role="button">EMPRESAS REGISTRO</a> 
+  
             <span class="glyphicon glyphicon-road"></span>
                <cat id="gato">¿COMO FUNCIONA?</cat></div>
-           <br>
-           <br>
+               <br>
+           <ol> 
+             <li> Elija las zonas que quiere abarcar.</li>
              <br>
-           </Bbr>
-           <ul> <span>1.</span>  Elija las zonas que quiere abarcar. </ul>
-           <ul><span>2. </span> los mercados principales y mercados secundarios.</ul>
-            <ul> <span >3.</span> Define el tipo de conductor, autos urbanos Autos largas distancias interdepartamentales y mas</ul>
-                <ul><span>4.</span> Elija cantidad de autos 10 , 15  o 25 autos Elija diseño,
-         *completo *parcial:  solo puertas* parcial plus: Puertas extendida a guardabarros</ul>
-       
-    </div>
-  
-
-  </div>
-  <img class="nature" src="IMG03.png" width="33%" id="loco">
-  <img class="nature" src="IMG07.PNG" width="33%" id="loca">
-  <img class="nature" src="IMG06.PNG" width="33%"id="locos">
-  
-  <script>
-  w3.slideshow(".nature", 1500);
-  </script>
-  <br>
-  <br>
-  <br>
+           <li> Los mercados princiaples y los secundarios</li>
+           <br>
+            <li> Define el tipo de conductor, autos urbanos , autos que recorren largas distancias interdepartamentales y mas.</li>
+            <li>Elija cantidad de autos 10 , 15  o 25 autos.  </li>
+              <li>Elija diseño:
+           <ul> Completo  </ul>
+           <ul> Lateral solo Puertas</ul>
+           <ul>Lateral Plus (Puertas extendido a guardabarros) </ul>
+       </li>     
+       </ol>    
 
     </div>
-       </div>
-       <div class="piedepagina">
-        <us class="us">MOVHI 2022 © Todos los derechos reservados </us>
-        <span> <img src="wa.png" width="4%"></span>
-        
-  </div>
+
+    <div class="piedepagina" id="fin">
+      <us class="us">MOVHI 2022 © Todos los derechos reservados </us>
+      
+    
+</div>
+ 
+
+
        </body>
        </html>
