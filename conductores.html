@@ -17,112 +17,239 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>MOVHI</title>
-   
-<link rel="stylesheet" href="index.css">
+    <script>
+      w3.slideshow(".nature", 1500);
+      </script>
     <style>
+      body{
+        padding: 2%;
+        padding-bottom: 0% !important;
+        background-color: black !important;
+        color: white;
+        width: auto;
+        height: 1300px;
+        max-height: 1300px;
+        display: grid !important;
+        text-align: justify;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-areas: 
+    " header header header header header header header header header header  "
+    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+    "finali finali finali finali finali finali finali finali finali finali"
+    ;
+      }
+    @media (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    grid-template-areas: 
+    " header header header header header header header header header header  "
+  
+    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+   
+    
+     "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+    "finali finali finali finali finali finali finali finali finali finali"
+;
+  }
+}
+
+      h3{
+        background-color: blueviolet;
+      }
+      .cabezera{
+    grid-area: header;
+    background: rgb(0, 0, 0);
+     }
+     .contenido{
+      background: salmon;
+      grid-area: contenido;
+      text-align: center;
+      display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr   ;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-areas: 
+    "one two three"
+    "one two three"
+    "four four four"
+
+;
+     }
+     @media (max-width: 600px) {
+  
+     .contenido{
+      grid-template-areas: 
+    "one one one"
+    "two two two"
+    "four four four"
+     }
+      }
+   
+   #button1{
+     position: relative;
+     top: 50%;
+   }
+   #button2{
+     position: relative;
+     top: 50%;
+   }
+    
+   #button3{
+     position: relative;
+     top: 50%;
+   }
+    
+    
+     .final{
+       grid-area: finali; 
+       background: black;
+     }
+     .galeria2{
+       padding: 0%;
+grid-area: fotitos;
+background: rgb(243, 237, 243);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr ;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-areas: 
+    "zeus hermes diana"
+    "zeus hermes diana"
+    "zeus hermes diana"
+;
+     }
+     .zeus{
+grid-area: zeus;
+
+   }
+   .hermes{
+    grid-area: hermes;
+
+   }
+   .diana{
+    grid-area: diana;
+   }
+   @media (max-width: 600px) {
+  .galeria2 {
+    grid-template-areas: 
+    "zeus zeus zeus"
+    "hermes hermes hermes"
+    "diana diana diana"
+;
+  }
+}
+@media (max-width: 600px) {
+  .tena {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+     .contenido >h2{
+       text-align: center;
+       background-color: rgb(15, 15, 15);
+     }
+     h5{
+       text-align: center !important;
+       position: relative;
+       top: 50%;
+     }
      
 
-        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-        </style>
-</head>
-<body>
-  
-    <div class="Cuadro">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-        <a class="navbar-brand" href="https://resetcredoincausae.github.io/MOVHI/"><img src="logologo.png" width="9%" id="img01"></a> 
-        </div>
-       </nav>
-       <div class="resetear">
-       <br>
-  <br>
-
-        <button><strong><a href="formulario.html" >REGISTRO</a></strong> </button>
-        <br>
-        <br>
-        <center> <img src="IMG03.png" width="50%" id="img05"> </center>
-       </div> 
- 
-   <div class="container">
-           <h4>        <span class="glyphicon glyphicon-road"></span> 	<y class="funciona"> <button><span class="parpadea text"><strong>¿COMO FUNCIONA?</strong> </span> </button></y> </h4>
-          
-           <div class="xy">
-           <br>
-           <p> Los anuncios y su material son seguros para la pintura del auto, además de protegerla es de fácil instalación y retiro, todo hecho de la mano de profesionales.</p>
-           
-              <br>
-              <p>Hacemos un análisis de tus hábitos de ruta .
-                 <br>Te informamos cuales campañas están disponibles para ti.<br>
-                 Marcamos el auto y te pagamos mensualmente.<br>
-                Nos encargamos de retirar el anuncio una vez finaliza la campaña </p>
-              <br>
-              <img src="IMG04.png" width="55%" class="img05">
-                <p>ingresos extra para conductores mientras realizan sus actividades cotidianas.
-                Si eres conductor de app no hay problema también puedes participar.     </p> 
-                </div>
-              <br>
-              
-             
-              </div>
-              </div>
-              <br>
-              <br>
-
-              <button><span class="parpadea text"><strong><a href="formulario.html">REGISTRO</a></strong> </span> </button>
-              <br>
-           <br>
-           <div class="jumbotron jumbotron-fluid">
-              <div class="container2">
-                <t class="t"> PREGUNTAS FRECUENTES <t>
-              
-              </div>
-            </div>
-  
-  <button class="accordion"><h6>
-      ¿Tengo que pagar?
-    </h6></button>
-  
-  <div class="panel">
-      <p>
-  
-          No, en ningún momento tienes que pagar por registro instalación u otra cosa, nosotros nos encargamos de todo y te pagamos a ti. </p>
-  </div>
-  
-  <button class="accordion">   <h6>  ¿Cuánto dinero puedo ganar? </h6></button>
-  
-  <div class="panel">
-    <p> Puedes ganar desde 300mil mes hasta 1200.000 dependiendo de las zonas, horarios y la campaña que tomes. </p>
-  </div>
-  
-  <button class="accordion"><h6>¿Puedo elegir la marca que llevara mi auto?</h6></button>
-  
-  <div class="panel">
-    <p>Si, siempre que hay una campaña disponible puedes elegir entre las que estén disponibles y sus beneficios.</p>
-  </div>
-  
-  <script>
-  var acc = document.getElementsByClassName("accordion");
-  var i;
-  
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var panel = this.nextElementSibling;
-      if (panel.style.display === "block") {
-        panel.style.display = "none";
-      } else {
-        panel.style.display = "block";
-      }
-    });
+     @media (max-width: 600px) {
+  .logito {
+   width: 30%;
+;
   }
-  </script>
-  
-    </div>
-    <div class="piedepagina">
-      <b class="texto">MOVHI 2022 © TODOS LOS DERECHOS RESERVADOS </b> 
- </div>
-</body>
-</html>
+  }
+  h4{
+    background-color: white
+     !important;
+  }
+  h3{
+    background: black;
+  }
+  .one{
+    grid-area: one;
+  }
+  .two{
+    grid-area: two;
+  }
+  .three{
+    grid-area: three;
+  }
+  .four{
+    grid-area: four;
+  }
+   @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+       
+        </style>
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+       <div class="cabezera">
+       <a href="index.html">  <img src="LOGOSALMON.png" width="9%" class="logito"></a>
+       </div>
+<div class="contenido">
+  <div class="four"> <h3>PREGUNTAS FRECUENTES </h3></div>
+<div class="one">
+  <a href="#demo" class="btn btn-info" data-toggle="collapse" id="button1">¿Tengo que pagar?</a>
+  <div id="demo" class="collapse">
+   <h4>No, en ningún momento tienes que pagar por registro instalación u otra cosa, nosotros nos encargamos de todo y te pagamos a ti. </h4>
+               </div>
+</div>
+<div class="two">
+               <a href="#demo2" class="btn btn-info" data-toggle="collapse" id="button2">¿CUÁNTO DINERO PUEDO GANAR?</a>
+               <div id="demo2" class="collapse">
+                 <h4>Puedes ganar desde 300mil mes hasta 1200.000 dependiendo de las zonas, horarios y la campaña que tomes. </h4>
+                            </div>
+</div>
+<div class="three">
+                            <a href="#demo3" class="btn btn-info" data-toggle="collapse" id="button3">¿Puedo elegir la marca que llevara mi auto?</a>
+                            <div id="demo3" class="collapse">
+                             <h4> Si, siempre que hay una campaña disponible puedes elegir entre las que estén disponibles y sus beneficios. </h4>
+                                         </div>
+</div>
+                                         
+                            
+</div>
+       <div class="galeria2">
+               <div class="zeus">
+                <img src="IMG06.PNG" height="88%" width="90%" class="rosa">
+              </div>
+              
+              <div class="hermes">
+                <img src="IMG07.PNG" height="88%" width="90%" class="rosa">
+              </div>
+              
+               <div class="diana">
+              <img src="Left.png" height="88%" width="90%" class="rosa">
+            </div>
+       </div>
+<div class="final">
+  <a href="políticas.html"> <h5>MOVHI 2022 Todos los derechos reservados </h5></a>
+</div>
+ 
+
+
+       </body>
+       </html>
+
+             
