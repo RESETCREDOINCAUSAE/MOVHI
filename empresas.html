@@ -21,159 +21,40 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>MOVHI</title>
-    <script>
-      w3.slideshow(".nature", 1500);
-      </script>
-    <style>
-      body{
-        padding: 2%;
-        padding-bottom: 0% !important;
-        background-color: black;
-        color: white;
-        width: auto;
-        height: 1700px;
-        max-height: 1700px;
-        display: grid !important;
-        text-align: justify;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    grid-template-areas: 
-    " header header header header header header header header header header  "
-    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
-    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
-    "finali finali finali finali finali finali finali finali finali finali"
-    ;
-      }
-    @media (max-width: 600px) {
-  body {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
-    grid-template-areas: 
-    " header header header header header header header header header header  "
-  
-    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-    "contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
-    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
-     "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
-    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
-    "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
-    "finali finali finali finali finali finali finali finali finali finali"
-;
-  }
-}
-
-      
-      .cabezera{
-    grid-area: header;
-    background: rgb(0, 0, 0);
-     }
-     .contenido{
-  
-       
-      grid-area: contenido;
-      text-align: center;
-   
-    background: salmon;
-     }
     
-     .final{
-       grid-area: finali; 
-       background: black;
-     }
-     .galeria2{
-       padding: 0%;
-grid-area: fotitos;
-background: rgb(243, 237, 243);
-display: grid;
-grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
-    grid-column-gap: 1px;
-    grid-row-gap: 1px;
-    grid-template-areas: 
-    "zeus hermes diana"
-    "zeus hermes diana"
-    "zeus hermes diana"
-;
-     }
-     .zeus{
-grid-area: zeus;
-
-   }
-   .hermes{
-    grid-area: hermes;
-
-   }
-   .diana{
-    grid-area: diana;
-   }
-   @media (max-width: 600px) {
-  .galeria2 {
-    grid-template-areas: 
-    "zeus zeus zeus"
-    "hermes hermes hermes"
-    "diana diana diana"
-;
-  }
-}
-@media (max-width: 600px) {
-  .tena {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-     .contenido >h2{
-       text-align: center;
-       background-color: rgb(15, 15, 15);
-     }
-     h5{
-       text-align: center !important;
-       position: relative;
-       top: 50%;
-     }
-     
-
-     @media (max-width: 600px) {
-  .logito {
-   width: 30%;
-;
-  }
-  }
-        @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-        </style>
+    <link rel="stylesheet" type="text/css" href="CSS/empresas.css"  />
+    
 
        <div class="cabezera">
-       <a href="index.html">  <img src="LOGOSALMON.png" width="9%" class="logito"></a>
+       <a href="index.html">  <img src="IMG/LOGOSALMON.png" width="100px" height="200px" class="logos"></a>
        </div>
 <div class="contenido">
-            <img src="Proyecto.png" width="66%" height="100%" class="tena">
+  <a href="index.html"> <button class="formu2">INICIO</button></a> 
+
+  <a href="formulario.html"> <button class="formu">REGÍSTRATE</button></a> 
+            <img src="IMG/Proyecto.png" width="66%" height="100%" class="tena">
  
           
             
                </div>
        <div class="galeria2">
                <div class="zeus">
-                <img src="IMG03.png" height="88%" width="90%" class="rosa">
+                <img src="IMG/IMG03.png" height="88%" width="90%" class="rosa">
               </div>
               
               <div class="hermes">
-                <img src="IMG04.png" height="88%" width="90%" class="rosa">
+                <img src="IMG/IMG04.png" height="88%" width="90%" class="rosa">
               </div>
               
                <div class="diana">
-              <img src="IMG05.png" height="88%" width="90%" class="rosa">
+              <img src="IMG/IMG05.png" height="88%" width="90%" class="rosa">
             </div>
        </div>
 <div class="final">
-  <a href="políticas.html"> <h5>MOVHI 2022 Todos los derechos reservados </h5></a>
+  <a href="formulario.html"> <h5>MOVHI 2022 Todos los derechos reservados </h5></a>
 </div>
  
-
+<a href="https://wa.link/ak0ctb"><img src="IMG/wa.png" class="whatsapp"></a>
 
        </body>
        </html>

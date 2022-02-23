@@ -210,12 +210,12 @@ font-size: 30px;
      center{
        color: rgb(255, 254, 254);
      }
-    
+     
      @media(min-width: 850px) {
    .fre{
 position: relative !important;
 left: 33% !important;
-top: 33%  !important;
+top: 43%  !important;
 font-size: 40px  !important;
 color: rgb(241, 241, 247) !important;
    }
@@ -232,7 +232,7 @@ color: white;
 @media (max-width: 600px) {
   .fre {
 position: relative ;
-left: 29% !important;
+left: 12% !important;
 top: 50%  !important;
 font-size: 35px  !important;
 color: white;
@@ -248,6 +248,15 @@ font-size: 22px !important;
 
   }
 }
+@media(min-width: 1000px) {
+  .fre{
+position: relative !important;
+left: 27% !important;
+top: 53%  !important;
+font-size: 30px  !important;
+color: rgb(241, 241, 247) !important;
+  }
+ }
 @media (max-width: 300px) {
    #xx {
 position: relative  !important;
@@ -257,12 +266,21 @@ font-size: 22px !important;
 
   }
 }
-@media (min-width: 850px){
+@media (min-width: 1000px){
   .fri{
     position: relative;
 left: 23% !important;
-top: 33%  !important;
-font-size: 40px  !important;
+top: 43%  !important;
+font-size: 20px  !important;
+color: rgb(233, 233, 243);
+   }
+}
+@media (min-width: 800px){
+  .fri{
+    position: relative;
+left: 23% !important;
+top: 53%  !important;
+font-size: 30px  !important;
 color: rgb(233, 233, 243);
    }
 }
@@ -272,16 +290,16 @@ color: rgb(233, 233, 243);
 position: relative ;
 left: 10% !important;
 top: 50%  !important;
-font-size: 30px !important;
+font-size: 32px !important;
 color:white;
   }
 }
 @media (max-width: 600px) {
 .fri{
   position: relative;
-  left: 19% !important;
+  left: 8% !important;
 top: 39%  !important;
-font-size: 37px  !important;
+font-size: 32px  !important;
 color: rgb(233, 233, 243);
 }
 }

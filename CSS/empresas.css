@@ -1,0 +1,190 @@
+.formu{
+    color: white;
+    background-color: orangered ;
+    border: none;
+    border-radius: 10PX;
+    position: absolute;
+    top: 13%;
+    right: 23% ;
+}
+.formu2{
+    color: white;
+    background-color: orangered ;
+    border: none;
+    border-radius: 10px;
+    top: 1%;
+    left: 4%;
+    position: absolute;
+   
+    text-align: center;
+   
+}
+body{
+    padding: 4%;
+    padding-bottom: 0% !important;
+    background-color: black;
+    color: white;
+    width: auto;
+    height: 1300px;
+    max-height: 1500px;
+    display: grid !important;
+    text-align: justify;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+grid-column-gap: 1px;
+grid-row-gap: 1px;
+grid-template-areas: 
+" header header header header header header header header header header  "
+"contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+"contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+"contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+"fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+"fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+"finali finali finali finali finali finali finali finali finali finali"
+;
+  }
+  @media (width: 390px) {
+body {
+    height: 2000px !important;
+max-height: 2000px !important;
+}
+}
+@media (width: 412px) {
+    body {
+        height: 2000px !important;
+    max-height: 2000px !important;
+    }
+    }
+@media (max-width: 600px) {
+body {
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+grid-template-areas: 
+" header header header header header header header header header header  "
+
+"contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+"contenido contenido contenido contenido contenido contenido contenido contenido contenido contenido"
+"fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+ "fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+"fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+"fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos fotitos"
+"finali finali finali finali finali finali finali finali finali finali"
+;
+}
+}
+
+  
+  .cabezera{
+grid-area: header;
+background: rgb(0, 0, 0);
+ }
+ .contenido{
+
+   
+  grid-area: contenido;
+  text-align: center;
+
+background: salmon;
+ }
+
+ .final{
+   grid-area: finali; 
+   background: black;
+ }
+ .galeria2{
+   padding: 0%;
+grid-area: fotitos;
+background: rgb(243, 237, 243);
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr ;
+grid-column-gap: 1px;
+grid-row-gap: 1px;
+grid-template-areas: 
+"zeus hermes diana"
+"zeus hermes diana"
+"zeus hermes diana"
+;
+ }
+ .zeus{
+grid-area: zeus;
+padding-top: 8%;
+
+}
+.hermes{
+grid-area: hermes;
+padding-top: 8%;
+
+}
+.diana{
+grid-area: diana;
+padding-top: 8%;
+}
+@media (max-width: 600px) {
+.galeria2 {
+grid-template-areas: 
+"zeus zeus zeus"
+"hermes hermes hermes"
+"diana diana diana"
+;
+}
+}
+@media (max-width: 600px) {
+.tena {
+width: 100%;
+height: 100%;
+}
+}
+
+ .contenido >h2{
+   text-align: center;
+   background-color: rgb(15, 15, 15);
+ }
+ h5{
+   text-align: center !important;
+   position: relative;
+   top: 50%;
+ }
+ 
+
+ @media (max-width: 600px) {
+.logito {
+width: 30%;
+;
+}
+}
+.whatsapp{
+width: 5% !important;
+position: absolute;
+top: 10%;
+right: 20%;
+}
+/* ESTO ADAPTA EL BOTON DE WHATSAPP A VARIOS DISPOSITIVOS*/
+@media (max-width: 850px) {
+.whatsapp {
+width: 15%;
+position: absolute;
+top: 12%;
+right: 12%;
+
+}
+}
+@media (max-width: 600px) {
+.whatsapp {
+width: 15%;
+position: absolute;
+top: 12%;
+right: 12%;
+
+}
+}
+@media (max-width: 300px) {
+.whatsapp {
+width: 24%;
+position: absolute;
+top: 42%;
+right: 12%;
+
+}
+}
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
