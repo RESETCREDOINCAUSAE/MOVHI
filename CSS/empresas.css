@@ -5,7 +5,7 @@
     border-radius: 10PX;
     position: absolute;
     top: 13%;
-    right: 32% ;
+    right: 32% !important;
 }
 .formu2{
     color: white;
