@@ -29,49 +29,207 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <title>MOVHI</title>
-    <link rel="stylesheet" type="text/css" href="CSS/estilos.css"  />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ubuntu:wght@700&display=swap');
+
+*{
+ font-family: Italic Bold !important;
+}
+body{
+background-color: black;
+width: 98%;
+height: 770px !important;
+}
+.header{
+  background-color: blue;
+  grid-area: header;
+}
+.footer{
+  background-color: blue;
+  grid-area: footer;
+}
+.content{
+  background-color: blue;
+  grid-area: contenido ;
+}
+
+.Cuadro{
+background-color: rgb(255, 255, 255);
+width: 98%;
+height: 98%;
+display: grid; 
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr   ;
+grid-column-gap: 1px;
+grid-row-gap: 1px;
+grid-template-areas: 
+" header header header "
+" contenido contenido contenido "
+" footer footer footer"
+
+}
+h5{
+  color: white;
+}
+#una, #dos, #tres{
+  background-color: white;
+}
+#imagenes{
+  background-color: black;
+}
+#wa{
+  position: absolute;
+  top: 3%;
+  right: 6%;
+}
+#fb{
+  position: absolute;
+  top: 13%;
+  right: 6%;
+}
+video{
+  width: 70%;
+  position: relative;
+  left: 15%;
+}
+@media (max-width: 600px) {
+  video {
+   
+    height: 333px;
+  }
+  #wa, #fb{
+    width: 16%;
+   
+  }
+
+}
+@media (max-width: 600px) {
+  .col-sm-6{
+    padding: 6%;
+
+  }
+   
+  }
+
+
+a:hover {
+  color: orange !important;
+  text-decoration: none;
+}
+.mySlides {display:none;}
+.w3-center{
+  background-color: white;
+}
+#rr{
+background-color: gray !important;
+}
+  
+  #ss{
+    background-color: aqua !important;
+  }
+  #bb, #cc{
+    width: 100% !important;
+    border-radius: 12px;
+  }
+  #TT{
+    background-color: azure;
+    height: 100%;
+    text-align: center;
+  }
+ #uu{
+  background-color: azure;
+    height: 100%;
+    text-align: center;
+ }
+ 
+    </style>
 </head>
 <body>
+
 <div class="Cuadro">
-             <div class="item-1">
-              <a href="index.html">  <img src="IMG/LOGOSALMON.png" width="200px" height="300px" class="logos"></a>
+             <div class="header">
+              <a href="index.html">  <img src="img/LOGOSALMON.png" width="200px" height="300px" class="logos"></a>
+              <div>
+                <div class="container-fluid" >     
+                  <div class="row">
+                  
+                    <div class="col-sm-6">
+                      <button type="button" class="btn btn-danger" id="bb"><a href="empresas.html">EMPRESAS</a></button>
+                    </div>
+                    
+                    <div class="col-sm-6 ">
+                      <button type="button" class="btn btn-danger" id="cc"> <a href="afiliate.html">AFILIATE</a></button>
+                    </div>
+                    
+                  </div>
+                </div>
+               
+              
+             
+  
+             
+             <div class="content" id="imagenes">
+              <h2 class="w3-center">ANUNCIATE MASIVAMENTE</h2>
 
+              <div class="w3-content" style="max-width:100% ; height: 222px ;" >
+                <div class="mySlides w3-container " id="TT">
+                  <h1><b>LLENA EL FORMULARIO</b></h1>
+                  <h1>En muy pocos pasos vilculate a la empresa</h1>
+                </div>
+        
+                <div class="mySlides w3-container" id="uu">
+                  <h1><b>Bienvenido a MOVHI</b></h1>
+                  <h1> Esta es tu mejor oportunidad</h1>
+                </div>
+              
+              
+                
               </div>
-             <div class="item-2">
-
-              <h2>  <zz id="xx">ANÚNCIATE MASIVAMENTE </zz> </h2>
+              
+              <script>
+              var slideIndex = 0;
+              carousel();
+              
+              function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1} 
+                x[slideIndex-1].style.display = "block"; 
+                setTimeout(carousel, 2000); 
+              }
+              </script>
+              
+               
+               <video src=" " controls autoloop ></video> 
+              <div class="container" >     
+                <div class="row">
+                  <div class="col-sm-4" id="una">
+                   <img src="img/IMG05.png" width="100%" >
+                  </div>
+                  <div class="col-sm-4 " id="dos">
+                    <img src="img/IMG04.png" width="100%" >
+                  </div>
+                  <div class="col-sm-4 " id="tres">
+                    <img src="img/IMG05.png" width="100%" >
+                  </div>
+                </div>
               </div>
-             <div class="botones">
-              <div class="botonuno">
-<a href="empresas.html"> <ya class="fre">EMPRESAS <ya> </a>
-</div>
-      <div class="botondos">
-<a href="conductores.html"> <ya class="fri">CONDUCTORES</ya></a>
-     </div>
-   </div>
-            <div class="galeria">
-
-              <div class="avisar">
-               <rativa class="rativa"> 
-                 GRAN EXPOSICIÓN DE MARCA EN MEDIOS NO CONVENCIONALES </rativa>
-              </div> 
-<div class="zeus">
-  <img src="IMG/IMG03.png" height="80%" class="rosa">
-</div>
-
-<div class="hermes">
-  <img src="IMG/IMG04.png" height="80%"  class="rosa">
-</div>
-
- <div class="diana">
-<img src="IMG/IMG05.png" height="80%"  class="rosa">
-            </div>
-            </div>
-            <div class="finished">
-           <h6 style="text-align: center;">  <a href="APPMOVIL/APP.apk"> <h5>MOVHI 2022 Todos los derechos reservados </h5></a> </gato> </h6>
+             </div>
+            <div class="footer">
+           <h6 style="text-align: center;">  <a href="APP.apk"> <br>
+            <br>
+            <br>
+            <br>
+            <br><h5>MOVHI 2022 Todos los derechos reservados </h5></a> </gato> </h6>
             </div>
 </div>  
- <a href="https://wa.link/ak0ctb"><img src="IMG/wa.png" class="whatsapp"></a>
+ <a href="https://wa.link/ak0ctb"><img src="img/wa.png" class="whatsapp" id="wa" width="5%"></a>
+ <a href="https://wa.link/ak0ctb"><img src="img/fb.png" class="whatsapp"  id="fb" width="5%"></a>
+           
 </body>
 <!--FIN DEL PROGRAMA -->
 </html>

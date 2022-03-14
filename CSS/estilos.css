@@ -11,7 +11,7 @@
      }
    
      .Cuadro{
-       background-color: salmon;
+       background-color: rgb(255, 255, 255);
        width: 100%;
        height: 100%;
        padding: 0;
@@ -40,7 +40,7 @@
      }
      @media (max-width: 600px) {
   .Cuadro {
-    background-color: rgb(250, 114, 216);
+    background-color: rgb(255, 253, 254);
        width: 100%;
        height: 130%;
        padding: 0;
@@ -76,7 +76,7 @@
      .item-2{
     grid-area: aviso;
     color: orange;
-    background: salmon;
+    background: rgb(255, 255, 255);
     
      }
      .botones{
@@ -86,15 +86,15 @@
        padding-bottom: 25%;
       grid-area: boton;
     color: rgb(51, 255, 0);
-    background: salmon;
+    background: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr  1fr ;
     grid-template-rows: 1fr 1fr ;
     grid-column-gap: 50px;
     grid-row-gap: 10px;
     grid-template-areas: 
-    " boton1 boton2 "
-    "boton1 boton2"
+    " boton1 boton1 "
+    "boton1 boto1"
     ;
      }
      @media (max-width: 600px) {
@@ -132,7 +132,7 @@ box-shadow: 0px 10px 10px black;
 grid-area: fotos;
 padding: 6%;
       color: rgb(126, 29, 206);
-    background: rgb(245, 116, 102);
+    background: white !important;
     display: grid;
     grid-template-columns: 1fr  1fr  1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr  1fr;
@@ -140,9 +140,9 @@ padding: 6%;
     grid-row-gap: 10px;
     grid-template-areas: 
     " aviso aviso aviso  aviso aviso aviso"
-    " zeus zeus hermes hermes diana diana "
-    " zeus zeus hermes hermes diana diana "
-    " zeus zeus hermes hermes diana  diana"
+    " hermes hermes zeus zeus diana diana "
+    " hermes hermes zeus zeus diana diana "
+    " hermes hermes zeus zeus diana  diana"
     ;
      }
      @media (max-width: 600px) {
@@ -150,7 +150,7 @@ padding: 6%;
     grid-area: fotos;
 
       color: rgb(126, 29, 206);
-    background: rgb(245, 116, 102);
+    background: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 1fr  1fr  1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr ;
@@ -210,9 +210,13 @@ font-size: 30px;
      center{
        color: rgb(255, 254, 254);
      }
-     
+     .fre{
+       width: 100% !important;
+     }
      @media(min-width: 850px) {
    .fre{
+     width: 100%
+     !important;
 position: relative !important;
 left: 33% !important;
 top: 43%  !important;
@@ -250,6 +254,7 @@ font-size: 22px !important;
 }
 @media(min-width: 1000px) {
   .fre{
+    width: 100% !important;
 position: relative !important;
 left: 27% !important;
 top: 53%  !important;
