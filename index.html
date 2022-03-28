@@ -36,16 +36,19 @@
  font-family: Italic Bold !important;
 }
 body{
-background-color: black;
+background-color: white ;
 width: 98%;
-height: 770px !important;
+height: 1100px !important;
+padding: 0;
 }
 .header{
-  background-color: blue;
+  background-image: url(fondo.png);
   grid-area: header;
+  width: 100% !important;
+  height: 400px !important;
 }
 .footer{
-  background-color: blue;
+  background-color: black;
   grid-area: footer;
 }
 .content{
@@ -54,16 +57,18 @@ height: 770px !important;
 }
 
 .Cuadro{
-background-color: rgb(255, 255, 255);
+  background-image: url(fondo.png) ;
+padding: 0% !important;
 width: 98%;
-height: 98%;
+height: 100%;
 display: grid; 
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr   ;
+grid-template-columns: 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr  1fr ;
 grid-column-gap: 1px;
 grid-row-gap: 1px;
 grid-template-areas: 
-" header header header "
+" header header header"
+"header header header "
 " contenido contenido contenido "
 " footer footer footer"
 
@@ -75,7 +80,7 @@ h5{
   background-color: white;
 }
 #imagenes{
-  background-color: black;
+  background-color: white;
 }
 #wa{
   position: absolute;
@@ -84,14 +89,42 @@ h5{
 }
 #fb{
   position: absolute;
-  top: 13%;
+  top: 18%;
   right: 6%;
+}
+#correo{
+  position: absolute;
+  top: 18%;
+  right: 16% ;
+}
+#conduce{
+  position: relative;
+  bottom: 2%;
+  left: 22%;
+  color: black;
+  background-color: orangered;
+  border-radius: 10px;
+}
+#llamada
+{
+  position: absolute !important;
+  top: 3% !important;
+  right: 26% !important;
+}
+.celu{
+  position: absolute !important;
+  top: 4% !important;
+  right: 12% !important;
+  color: black;
+  font-size:x-large ;
+  font-style: italic;
 }
 video{
   width: 70%;
   position: relative;
   left: 15%;
 }
+
 @media (max-width: 600px) {
   video {
    
@@ -103,13 +136,7 @@ video{
   }
 
 }
-@media (max-width: 600px) {
-  .col-sm-6{
-    padding: 6%;
 
-  }
-   
-  }
 
 
 a:hover {
@@ -141,45 +168,59 @@ background-color: gray !important;
     height: 100%;
     text-align: center;
  }
- 
+ #rrr{
+   position : relative ;
+   left: 110%  !important;
+   border-radius: 40px;
+   height: 15% ;
+bottom: 100%  !important;
+  ;
+ }
+ .w3-center{
+   background-color: black;
+   border-radius: 10px;
+   color: white;
+ }
     </style>
 </head>
 <body>
 
-<div class="Cuadro">
+<div class="Cuadro container-fluid">
              <div class="header">
-              <a href="index.html">  <img src="LOGOSALMON.png" width="200px" height="300px" class="logos"></a>
+              
+              <a href="index.html">  <img src="logoactualizado.PNG" width="20%" class="logos">  
+            
               <div>
                 <div class="container-fluid" >     
                   <div class="row">
-                  
+                  <br>
+                    <div class="col-sm-6">
+                      <br>
+                      <button type="button" class="btn btn-danger" id="bb"><a href="loquehacemos.html">LO QUE HACEMOS</a></button>
+                    </div>
+                    <br>
                     <div class="col-sm-6">
                       <button type="button" class="btn btn-danger" id="bb"><a href="empresas.html">EMPRESAS</a></button>
                     </div>
                     
-                    <div class="col-sm-6 ">
-                      <button type="button" class="btn btn-danger" id="cc"> <a href="afiliate.html">AFILIATE</a></button>
-                    </div>
                     
                   </div>
                 </div>
                
               
+    
              
-  
-             
-             <div class="content" id="imagenes">
+             <div class="content container-fluid" id="imagenes">
               <h2 class="w3-center">ANUNCIATE MASIVAMENTE</h2>
 
               <div class="w3-content" style="max-width:100% ; height: 222px ;" >
                 <div class="mySlides w3-container " id="TT">
-                  <h1><b>LLENA EL FORMULARIO</b></h1>
-                  <h1>En muy pocos pasos vilculate a la empresa</h1>
+                  <h1><b>GRAN EXPOSICIÓN DE MARCA</b></h1>
+                  <h1>En medios no convencionales</h1>
                 </div>
         
                 <div class="mySlides w3-container" id="uu">
-                  <h1><b>Bienvenido a MOVHI</b></h1>
-                  <h1> Esta es tu mejor oportunidad</h1>
+               
                 </div>
               
               
@@ -204,7 +245,7 @@ background-color: gray !important;
               </script>
               
                
-               <video src=" " controls autoloop ></video> 
+               <video src="videociudad.mp4"  autoloop controls muted ></video> 
               <div class="container" >     
                 <div class="row">
                   <div class="col-sm-4" id="una">
@@ -223,12 +264,24 @@ background-color: gray !important;
            <h6 style="text-align: center;">  <a href="APP.apk"> <br>
             <br>
             <br>
-            <br>
-            <br><h5>MOVHI 2022 Todos los derechos reservados </h5></a> </gato> </h6>
+           
+            <h5>  MOVHI 2022 Todos los derechos reservados  
+              <button id="conduce"> <a href="trabajaconnosotros.html">TRABAJA CON NOSOTROS</a></button>
+            </h5></a> </gato> </h6>
+           
+              <br>
+          
+                    
+           
             </div>
 </div>  
  <a href="https://wa.link/ak0ctb"><img src="wa.png" class="whatsapp" id="wa" width="5%"></a>
- <a href="https://wa.link/ak0ctb"><img src="fb.png" class="whatsapp"  id="fb" width="5%"></a>
+ <a href="https://www.facebook.com/profile.php?id=100077636378912"><img src="fb.svg" class="facebook"  id="fb" width="5%"></a>
+ <a href="mailto:comunicaciones@movhi.com.co"><img src="correo.png" class="correo"  id="correo" width="5%"></a>
+ <a href="https://wa.link/ak0ctb"><img src="llamada.png" class="llamada"  id="llamada" width="5%"></a>
+ 
+ <h4 class="celu"> 322 255 2062</h4>
+ 
            
 </body>
 <!--FIN DEL PROGRAMA -->
